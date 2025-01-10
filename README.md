@@ -15,8 +15,12 @@ Dive into the world of Jetpack Compose with the Compose Stability Examples proje
 
 ### Stability Examples
 - **Stable Examples:** Properly implemented composables using immutable data structures or stable objects, ensuring optimal recomposition behavior.
+  
+  **Key Point:** If a class is marked as **stable**, it uses **structural equality** (`.equals()`) to detect changes, ensuring precise and efficient recomposition.
 
 - **Unstable Examples:** Common issues in Compose, such as passing mutable or frequently changing data, leading to excessive recompositions.
+  
+  **Key Point:** If a class is **unstable**, it uses **referential equality** (`===`), which may result in unnecessary recompositions when data is updated but not replaced.
 
 ## ⚙️Technologies
 ### 📱App:
@@ -30,7 +34,6 @@ Dive into the world of Jetpack Compose with the Compose Stability Examples proje
 - Provide insights on handling state, immutability, and stability annotations to optimize UI rendering.
 
 ## Installation
-
 1. Clone the repository:
 ```bash
 git clone https://github.com/AdamDawi/ComposeStabilityExamples
@@ -50,5 +53,4 @@ Minimum version: Android 7 (API level 24) or later📱
 Target version: Android 14 (API level 34) or later📱
 
 ## Author
-
 Adam Dawidziuk🧑‍💻
