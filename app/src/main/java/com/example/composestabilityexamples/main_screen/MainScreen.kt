@@ -25,7 +25,6 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import com.example.android.compose.recomposehighlighter.recomposeHighlighter
-import com.example.composestabilityexamples.main_screen.components.DialogWithImage
 import com.example.composestabilityexamples.R
 import com.example.composestabilityexamples.bad_examples.Items
 import com.example.composestabilityexamples.bad_examples.Items3
@@ -45,9 +44,9 @@ import com.example.composestabilityexamples.good_examples.StableExample2
 import com.example.composestabilityexamples.good_examples.StableExample3
 import com.example.composestabilityexamples.good_examples.StableExample4
 import com.example.composestabilityexamples.good_examples.StableExample5
+import com.example.composestabilityexamples.main_screen.components.DialogWithImage
 import kotlinx.collections.immutable.persistentListOf
 
-// MainScreen.kt
 @Composable
 fun MainScreen() {
     val sliderPosition = remember { mutableFloatStateOf(0f) }

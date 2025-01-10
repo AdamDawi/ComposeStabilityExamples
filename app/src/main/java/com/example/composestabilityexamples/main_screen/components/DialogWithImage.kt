@@ -1,5 +1,6 @@
 package com.example.composestabilityexamples.main_screen.components
 
+import android.annotation.SuppressLint
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.gestures.rememberTransformableState
 import androidx.compose.foundation.gestures.transformable
@@ -22,6 +23,7 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.window.Dialog
 
+@SuppressLint("UnusedBoxWithConstraintsScope")
 @Composable
 fun DialogWithImage(
     onDismissRequest: () -> Unit,
